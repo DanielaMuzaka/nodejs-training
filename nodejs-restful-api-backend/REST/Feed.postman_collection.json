@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "6a769026-612c-48f9-9ad5-d089504ce43c",
+		"name": "Feed",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24238683"
+	},
+	"item": [
+		{
+			"name": "feed/post",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRhbmllbGFAdGVzdC5jb20iLCJ1c2VySWQiOiI2M2I1NGQ1YzI3NGUxNDE2MmNjODk4YjgiLCJpYXQiOjE2NzI4MjYzMTYsImV4cCI6MTY3MjgyOTkxNn0.KZRMbEyLniPUMriQ9RaaTXySO5oeSQ7Pt8UrHq5GRNQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"title\": \"Book\",\r\n      \"content\": \"very good\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/feed/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"feed",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user create",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"daniela@test.com\",\r\n    \"name\" : \"Daniela\",\r\n    \"password\" : \"dddddddd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth//signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user create Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"daniela@test.com\",\r\n    \"name\" : \"Daniela\",\r\n    \"password\" : \"dddddddd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

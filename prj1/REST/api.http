@@ -1,0 +1,30 @@
+###
+GET http://localhost:3000/products
+
+###
+GET http://localhost:3000/cart
+
+###
+GET http://localhost:3000/orders
+
+###
+GET http://localhost:3000/checkout
+
+###
+GET http://localhost:3000/
+
+###
+GET http://localhost:3000/admin/add-product
+
+###
+GET http://localhost:3000/admin/products
+
+###          
+POST http://localhost:3000/admin/add-product
+
+{
+     "title": "Book 20",
+      "price": 30,
+      "imageUrl": "tyyuur",
+      "description": "very good"
+}
